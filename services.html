@@ -74,6 +74,22 @@
     </script>
 
     <style>
+        /* Accordion Transition */
+        .accordion-content {
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            opacity: 1;
+            padding-bottom: 1.5rem;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        
         .glass-panel {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(12px);
@@ -740,6 +756,124 @@
             </div>
         </section>
 
+
+          <!-- SECTION 12: FAQ -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-brand-blue font-semibold tracking-wider uppercase text-sm mb-2">Knowledge Base</h2>
+                    <h3 class="text-4xl font-heading font-bold text-brand-navy mb-4">Frequently Asked Questions</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item active bg-brand-gray rounded-xl shadow-sm border border-brand-lightBlue overflow-hidden" data-aos="fade-up">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" onclick="toggleAccordion(this)">
+                            <h4 class="font-heading font-semibold text-brand-navy text-lg">What industries do you provide 3PL services for?</h4>
+                            <i class="ph-bold ph-caret-down text-brand-blue transition-transform duration-300 accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content px-6 text-gray-600">
+                            We support a wide range of industries including Logistics, Manufacturing, Retail, Healthcare, FMCG, Agriculture, and Automotive. Our facilities are equipped to handle general freight, sensitive goods, and bulky items.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item bg-brand-gray rounded-xl shadow-sm border border-brand-lightBlue overflow-hidden" data-aos="fade-up">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" onclick="toggleAccordion(this)">
+                            <h4 class="font-heading font-semibold text-brand-navy text-lg">Do you offer Australia-wide distribution?</h4>
+                            <i class="ph-bold ph-caret-down text-brand-blue transition-transform duration-300 accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content px-6 text-gray-600">
+                            Yes, we have a comprehensive nationwide network with major distribution hubs in Sydney, Melbourne, Brisbane, Perth, and Adelaide. We offer metropolitan, regional, and interstate freight solutions.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item bg-brand-gray rounded-xl shadow-sm border border-brand-lightBlue overflow-hidden" data-aos="fade-up">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" onclick="toggleAccordion(this)">
+                            <h4 class="font-heading font-semibold text-brand-navy text-lg">Can you integrate with our existing WMS or ERP?</h4>
+                            <i class="ph-bold ph-caret-down text-brand-blue transition-transform duration-300 accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content px-6 text-gray-600">
+                            Absolutely. Our modern IT infrastructure is designed to integrate seamlessly with major ERPs and e-commerce platforms (like Shopify, SAP, Oracle) via API, providing you with real-time visibility of inventory and orders.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item bg-brand-gray rounded-xl shadow-sm border border-brand-lightBlue overflow-hidden" data-aos="fade-up">
+                        <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" onclick="toggleAccordion(this)">
+                            <h4 class="font-heading font-semibold text-brand-navy text-lg">What happens if there are inventory discrepancies?</h4>
+                            <i class="ph-bold ph-caret-down text-brand-blue transition-transform duration-300 accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content px-6 text-gray-600">
+                            We pride ourselves on a 99.9% inventory accuracy rate. We conduct regular cycle counts and utilize barcode scanning technology for all inbound and outbound movements. Any discrepancies are flagged immediately and investigated by our warehouse managers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+ <!-- SECTION 14: Blog -->
+        <section class="py-24 bg-brand-gray">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6" data-aos="fade-up">
+                    <div class="max-w-2xl">
+                        <h2 class="text-brand-blue font-semibold tracking-wider uppercase text-sm mb-2">Insights</h2>
+                        <h3 class="text-4xl font-heading font-bold text-brand-navy mb-4">Latest from Logistics</h3>
+                    </div>
+                    <div>
+                        <a href="#blog" class="text-brand-navy font-semibold hover:text-brand-blue transition-colors flex items-center">
+                            Explore Our Blog <i class="ph ph-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Blog 1 -->
+                    <div class="group cursor-pointer bg-white rounded-card overflow-hidden shadow-sm hover:shadow-premium transition-shadow" data-aos="fade-up" data-aos-delay="0">
+                        <div class="overflow-hidden h-56 relative">
+                            <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 border-t border-brand-lightBlue">
+                            <div class="flex items-center gap-4 text-xs font-semibold text-brand-blue mb-3 uppercase tracking-wider">
+                                <span>Supply Chain</span> &bull; <span>Oct 12, 2023</span>
+                            </div>
+                            <h4 class="text-xl font-heading font-bold text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">How 3PLs are Navigating Supply Chain Disruptions</h4>
+                            <a href="#" class="text-brand-steelDark text-sm font-medium inline-flex items-center group-hover:text-brand-blue transition-colors">Read More <i class="ph ph-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="group cursor-pointer bg-white rounded-card overflow-hidden shadow-sm hover:shadow-premium transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden h-56 relative">
+                            <img src="https://images.unsplash.com/photo-1620021665997-750d0322c366?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 border-t border-brand-lightBlue">
+                            <div class="flex items-center gap-4 text-xs font-semibold text-brand-blue mb-3 uppercase tracking-wider">
+                                <span>Technology</span> &bull; <span>Oct 05, 2023</span>
+                            </div>
+                            <h4 class="text-xl font-heading font-bold text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">The Role of Automation in Modern Warehousing</h4>
+                            <a href="#" class="text-brand-steelDark text-sm font-medium inline-flex items-center group-hover:text-brand-blue transition-colors">Read More <i class="ph ph-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog 3 -->
+                    <div class="group cursor-pointer bg-white rounded-card overflow-hidden shadow-sm hover:shadow-premium transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden h-56 relative">
+                            <img src="https://images.unsplash.com/photo-1501523460185-2aa5d2a0f981?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 border-t border-brand-lightBlue">
+                            <div class="flex items-center gap-4 text-xs font-semibold text-brand-blue mb-3 uppercase tracking-wider">
+                                <span>Sustainability</span> &bull; <span>Sep 28, 2023</span>
+                            </div>
+                            <h4 class="text-xl font-heading font-bold text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">Building Greener Logistics Networks in Australia</h4>
+                            <a href="#" class="text-brand-steelDark text-sm font-medium inline-flex items-center group-hover:text-brand-blue transition-colors">Read More <i class="ph ph-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="relative py-32 overflow-hidden">
             <div class="absolute inset-0">
                 <img src="/image-for-3pl-2.png" alt="Warehouse at Sunset" class="w-full h-full object-cover" />
@@ -894,6 +1028,21 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
+           // FAQ Accordion Logic
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            // Close all others
+            allItems.forEach(i => {
+                if(i !== item) i.classList.remove('active');
+            });
+            
+            // Toggle current
+            item.classList.toggle('active');
+        }
+
         // Initialize Icons and AOS
         document.addEventListener("DOMContentLoaded", function() {
             if (typeof lucide !== 'undefined') {
