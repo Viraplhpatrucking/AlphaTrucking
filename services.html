@@ -6,18 +6,36 @@
     <title>#1 3PL Warehousing & Distribution Services | Alpha Trucking</title>
     <meta name="description" content="Looking for a reliable 3PL logistics partner? Alpha Trucking provides secure warehousing, inventory management & Australia-wide distribution. Request a quote today!">
     
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+   
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+     <!-- Open Graph Tags -->
+    <meta property="og:title" content="#1 3PL Warehousing & Distribution Services | Alpha Trucking">
+    <meta property="og:description" content="Secure warehousing, inventory management & Australia-wide distribution. Request a quote today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alphatrucking.com.au/services/3pl-warehousing-distribution-services/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1586528116311-ad8ed7453635?q=80&w=1200&auto=format&fit=crop">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#1 3PL Warehousing & Distribution Services | Alpha Trucking">
+    <meta name="twitter:description" content="Secure warehousing, inventory management & Australia-wide distribution.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Tailwind CSS with Custom Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Configuration -->
     <script>
@@ -446,6 +464,153 @@
             </div>
         </section>
 
+<!-- SECTION 6: Industries -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <h2 class="text-brand-blue font-semibold tracking-wider uppercase text-sm mb-2">Sectors</h2>
+                    <h3 class="text-4xl font-heading font-bold text-brand-navy mb-4">Industries We Support</h3>
+                    <p class="text-gray-600 text-lg">Our adaptable warehousing environments are structured to manage the unique compliance and handling requirements of diverse sectors.</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
+                    <!-- Industry Pills -->
+                    <script>
+                        const industries = [
+                            {name: 'Logistics', icon: 'ph-truck'}, {name: 'Manufacturing', icon: 'ph-factory'},
+                            {name: 'Construction', icon: 'ph-crane'}, {name: 'Retail', icon: 'ph-storefront'},
+                            {name: 'Automotive', icon: 'ph-car'}, {name: 'Healthcare', icon: 'ph-first-aid'},
+                            {name: 'Chemical', icon: 'ph-flask'}, {name: 'FMCG', icon: 'ph-shopping-cart'},
+                            {name: 'Agriculture', icon: 'ph-plant'}, {name: 'Solar', icon: 'ph-sun'},
+                            {name: 'Import Export', icon: 'ph-boat'}, {name: 'Packaging', icon: 'ph-package'},
+                            {name: 'Building Materials', icon: 'ph-wall'}, {name: 'Fitness', icon: 'ph-barbell'},
+                            {name: 'Commercial', icon: 'ph-buildings'}
+                        ];
+                        industries.forEach((ind, index) => {
+                            document.write(`
+                                <div class="px-6 py-4 border border-gray-200 rounded-full flex items-center gap-3 hover:border-brand-blue hover:bg-brand-lightBlue/30 hover:text-brand-blue transition-all cursor-pointer text-brand-steel font-medium group">
+                                    <i class="ph-light ${ind.icon} text-xl group-hover:scale-110 transition-transform"></i>
+                                    ${ind.name}
+                                </div>
+                            `);
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- SECTION 10: Depot Locations -->
+        <section id="locations" class="py-24 bg-brand-gray relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold text-brand-steelDark mb-6">
+                        Depot <span class="text-brand-blue relative inline-block">Locations
+                            <span class="absolute -bottom-2 left-0 w-full h-1 bg-brand-blue rounded-full"></span>
+                        </span>
+                    </h2>
+                    <p class="text-brand-steel text-lg">We have depots located in every major city of Australia, to ensure we have stock available across the country.</p>
+                </div>
+
+                <!-- Locations Grid -->
+                <div class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+                    
+                    <!-- Sydney -->
+                    <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white rounded-[16px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-premium transition-all duration-300 relative overflow-hidden border-t-[4px] border-brand-blue p-8 group cursor-default" data-aos="fade-up" data-aos-delay="0">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="ph-bold ph-map-pin text-brand-blue text-xl"></i>
+                            <h3 class="text-2xl font-heading font-bold text-brand-blue leading-none mt-1">Sydney</h3>
+                            <span class="px-2.5 py-0.5 bg-brand-lightBlue border border-brand-blue/20 text-brand-blue text-[11px] font-bold rounded uppercase tracking-wider ml-1 mt-1">NSW</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-steelDark text-sm mb-3 font-medium">
+                            <i class="ph-regular ph-clock text-brand-blue text-base"></i>
+                            <span>Mon-Fri: 07:00 AM – 04:00 PM</span>
+                        </div>
+                        <p class="text-brand-steel text-sm leading-relaxed max-w-[90%]">
+                            9/2 Southridge Street, Eastern Creek NSW 2766
+                        </p>
+                        <!-- Background Graphic -->
+                        <i class="ph-light ph-map-pin absolute -bottom-10 -right-6 text-[140px] text-brand-blue opacity-5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 pointer-events-none"></i>
+                    </div>
+
+                    <!-- Brisbane -->
+                    <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white rounded-[16px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-premium transition-all duration-300 relative overflow-hidden border-t-[4px] border-brand-blue p-8 group cursor-default" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="ph-bold ph-map-pin text-brand-blue text-xl"></i>
+                            <h3 class="text-2xl font-heading font-bold text-brand-blue leading-none mt-1">Brisbane</h3>
+                            <span class="px-2.5 py-0.5 bg-brand-lightBlue border border-brand-blue/20 text-brand-blue text-[11px] font-bold rounded uppercase tracking-wider ml-1 mt-1">QLD</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-steelDark text-sm mb-3 font-medium">
+                            <i class="ph-regular ph-clock text-brand-blue text-base"></i>
+                            <span>Mon-Fri: 06:30 AM – 04:30 PM</span>
+                        </div>
+                        <p class="text-brand-steel text-sm leading-relaxed max-w-[90%]">
+                            82 Parramatta Road, Underwood QLD 4119
+                        </p>
+                        <!-- Background Graphic -->
+                        <i class="ph-light ph-map-pin absolute -bottom-10 -right-6 text-[140px] text-brand-blue opacity-5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 pointer-events-none"></i>
+                    </div>
+                    
+                    <!-- Melbourne -->
+                    <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white rounded-[16px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-premium transition-all duration-300 relative overflow-hidden border-t-[4px] border-brand-blue p-8 group cursor-default" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="ph-bold ph-map-pin text-brand-blue text-xl"></i>
+                            <h3 class="text-2xl font-heading font-bold text-brand-blue leading-none mt-1">Melbourne</h3>
+                            <span class="px-2.5 py-0.5 bg-brand-lightBlue border border-brand-blue/20 text-brand-blue text-[11px] font-bold rounded uppercase tracking-wider ml-1 mt-1">VIC</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-steelDark text-sm mb-3 font-medium">
+                            <i class="ph-regular ph-clock text-brand-blue text-base"></i>
+                            <span>Mon-Fri: 08:00 AM – 04:00 PM</span>
+                        </div>
+                        <p class="text-brand-steel text-sm leading-relaxed max-w-[90%]">
+                            2/8 Weddel Court, Laverton North VIC 3026
+                        </p>
+                        <!-- Background Graphic -->
+                        <i class="ph-light ph-map-pin absolute -bottom-10 -right-6 text-[140px] text-brand-blue opacity-5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 pointer-events-none"></i>
+                    </div>
+
+                    <!-- Adelaide -->
+                    <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white rounded-[16px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-premium transition-all duration-300 relative overflow-hidden border-t-[4px] border-brand-blue p-8 group cursor-default" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="ph-bold ph-map-pin text-brand-blue text-xl"></i>
+                            <h3 class="text-2xl font-heading font-bold text-brand-blue leading-none mt-1">Adelaide</h3>
+                            <span class="px-2.5 py-0.5 bg-brand-lightBlue border border-brand-blue/20 text-brand-blue text-[11px] font-bold rounded uppercase tracking-wider ml-1 mt-1">SA</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-steelDark text-sm mb-3 font-medium">
+                            <i class="ph-regular ph-clock text-brand-blue text-base"></i>
+                            <span>Mon-Fri: 07:30 AM – 04:30 PM</span>
+                        </div>
+                        <p class="text-brand-steel text-sm leading-relaxed max-w-[90%]">
+                            16 Einstein Dr, Golden Grove SA 5125
+                        </p>
+                        <!-- Background Graphic -->
+                        <i class="ph-light ph-map-pin absolute -bottom-10 -right-6 text-[140px] text-brand-blue opacity-5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 pointer-events-none"></i>
+                    </div>
+
+                    <!-- Perth -->
+                    <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white rounded-[16px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-premium transition-all duration-300 relative overflow-hidden border-t-[4px] border-brand-blue p-8 group cursor-default" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="ph-bold ph-map-pin text-brand-blue text-xl"></i>
+                            <h3 class="text-2xl font-heading font-bold text-brand-blue leading-none mt-1">Perth</h3>
+                            <span class="px-2.5 py-0.5 bg-brand-lightBlue border border-brand-blue/20 text-brand-blue text-[11px] font-bold rounded uppercase tracking-wider ml-1 mt-1">WA</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-brand-steelDark text-sm mb-3 font-medium">
+                            <i class="ph-regular ph-clock text-brand-blue text-base"></i>
+                            <span>Mon-Fri: 07:00 AM – 04:30 PM</span>
+                        </div>
+                        <p class="text-brand-steel text-sm leading-relaxed max-w-[90%]">
+                            1/19 Kalinga Way, Landsdale WA 6065
+                        </p>
+                        <!-- Background Graphic -->
+                        <i class="ph-light ph-map-pin absolute -bottom-10 -right-6 text-[140px] text-brand-blue opacity-5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 pointer-events-none"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        
         <section class="py-24 bg-white dark:bg-brand-navy overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
